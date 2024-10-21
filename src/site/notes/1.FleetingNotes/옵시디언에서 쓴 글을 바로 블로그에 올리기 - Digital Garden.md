@@ -61,7 +61,10 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 
 ---
 6. 블로그에 글을 쓰기 위해서 `ctrl(command) + p` 를 눌러 "Digital Garden: Publish Single Note" 를 입력하세요.
+
+>[!Tips] 블로그 글을 게시할 때 **Publication Center**를 사용할 수 있습니다.
 ---
+
 7. 만약 글을 삭제하고 싶다면, 반드시 publication center에 들어가 "Delete notes from garden" 버튼을 눌러야 합니다.
 
 >[!tip] 어떻게 publication center에 들어갈 수 있나요?
