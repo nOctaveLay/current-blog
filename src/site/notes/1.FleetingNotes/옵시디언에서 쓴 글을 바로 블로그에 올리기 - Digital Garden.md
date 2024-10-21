@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/"}
+{"date":"2024년 10월 21일 오후 12시 6분","dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","dgPassFrontmatter":true}
 ---
+
+
 
 # 왜 사용하면 좋을까요?
 
@@ -63,6 +65,7 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 6. 블로그에 글을 쓰기 위해서 `ctrl(command) + p` 를 눌러 "Digital Garden: Publish Single Note" 를 입력하세요.
 
 >[!Tips] 블로그 글을 게시할 때 **Publication Center**를 사용할 수 있습니다.
+
 ---
 
 7. 만약 글을 삭제하고 싶다면, 반드시 publication center에 들어가 "Delete notes from garden" 버튼을 눌러야 합니다.
@@ -72,4 +75,58 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 >- Ctrl(Cmd) + p를 눌러 **Publication Center** 를 입력 후 사용합니다.
 >- 왼쪽 아이콘 메뉴에 있는 새싹 표시를 누릅니다.
 
+
+# 알면 좋은 명령어들 
+
+>[!Notes] ctrl(command)+P 로 쓸 수 있는 명령어들은 전부 단축키가 가능하다.
+>
+
+## Quick Publish And Share Notes
+
+현재 노트에 게시 플래그를 설정하고, 노트를 게시하며, 블로그 URL을 클립보드에 복사합니다. `Add Publish Flag -> Publish Single Note -> Copy Garden URL`과 동일하게 작동합니다. 
+
+## Open Publication Center
+
+블로그에 들어가거나 들어갈 예정이 있는 파일들을 전부 관리합니다.
+또한, 큰 update를 할 수 있는 옵션이 있습니다.
+
+위의 두 옵션은 단축키를 설정하는 것이 좋습니다. 더 자세한 내용은 [여기](https://dg-docs.ole.dev/getting-started/02-commands/)에서 확인하세요!
+
+# 블로그 세팅하기
+
+처음 블로그를 만들면 Homepage밖에 없는 화면이 기다리고 있습니다. 내가 올린 게시글을 잘 보여주기 위해서, 반드시 블로그를 세팅할 필요가 있습니다. (최소한 어떤 파일이 있는지 보여주는 정도는 세팅해야 합니다.)
+이에 관련된 모든 세팅은 "Note Settings" 에 존재합니다. 
+
+![Blog Setting.png](/img/user/AttachedFiles/Blog%20Setting.png)
+
+Manage note settings를 누르면 다음과 같은 창이 나타납니다.
+
+![Blog Setting2.png](/img/user/AttachedFiles/Blog%20Setting2.png)
+
+토글을 클릭하면 클릭하는 즉시 홈페이지에 반영됩니다. 이 세팅은 전체적인 블로그 세팅으로, 만약 특정 노트에 대해 일부 기능을 활성화하거나 비 활성화하려면 front matter(전반적인 관리)를 통해 이 작업을 수행할 수 있습니다.  frontmatter/properties에 모든 세팅이 저장 되어 있습니다. 
+왼쪽에 있는 파일 시스템을 부르고 싶다면, "Show filetree sidebar" 를 클릭하면 됩니다.
+나머지 설정들은 적당히 설정해주시면 됩니다. 자세한 설정은 [여기](https://dg-docs.ole.dev/getting-started/03-note-settings/)를 참고하세요
+
+# 블로그 테마 세팅
+
+![blog_theme_setting.png](/img/user/AttachedFiles/blog_theme_setting.png)
+
+누르면 다음과 같은 창이 나타납니다.
+
+![appearance_setting.png](/img/user/AttachedFiles/appearance_setting.png)
+이 창의 내용을 하나씩 설명하겠습니다.
+
+## Theme
+
+기본적인 테마는 simple dark theme가 적용됩니다. 이 플러그인은 기본적인 Obsidian theme를 지원합니다.
+
+## Base Theme
+
+Light, Dark 두 가지 테마가 존재합니다.
+
+## Sitename
+
+왼쪽 위에 보이는 블로그 이름을 설정할 수 있다. 바꾼 후 반드시 "Apply setting to site" 버튼을 눌러야 합니다.
+
+나머지 필요한 사항은 [여기](https://dg-docs.ole.dev/getting-started/04-appearance-settings/)에 정리되어 있습니다.
 
