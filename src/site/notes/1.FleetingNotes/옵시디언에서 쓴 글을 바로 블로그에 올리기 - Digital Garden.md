@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T11:16:28.168+09:00"}
+{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T11:19:18.288+09:00"}
 ---
 
 
@@ -24,7 +24,6 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 ---
 2. [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) 로 들어가 "Deploy" 버튼을 눌러주세요!!
 
-![[Snipaste_2024-10-21_12-17-49.PNG]]
 
 이 과정은 Vercel을 열어 Digital Obsidian Garden 레포의 복제본을 만드는 것입니다. Private로 해도 전혀 문제 없으며, Vercel에서 진행 되는 과정을 따라주세요!
 
