@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","updated":"10월 화, 2024 10:46 오전"}
+{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T10:58:43.818+09:00"}
 ---
 
 
