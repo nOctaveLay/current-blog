@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T10:58:43.818+09:00"}
+{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T11:14:23.329+09:00"}
 ---
 
 
@@ -8,6 +8,7 @@
 markdown format에 익숙하며, Obsidian을 자주 쓰는 사용자
 -> blog에 대해 따로 신경 쓰고 싶지 않을 때
 
+---
 # 어떻게 사용하나요?
 
 Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습니다. 
@@ -21,7 +22,12 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 
 1. 옵시디언에서  커뮤니티 플러그인을 사용해 [Digital Garden](obsidian://show-plugin?id=digitalgarden) 을 다운로드하고 설치합니다. **반드시 활성화를 눌러주세요!**
 ---
-2. [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) 로 들어가 "Deploy" 버튼을 눌러주세요!![[Snipaste_2024-10-21_12-17-49.PNG]]이 과정은 Vercel을 열어 Digital Obsidian Garden 레포의 복제본을 만드는 것입니다. Private로 해도 전혀 문제 없으며, Vercel에서 진행 되는 과정을 따라주세요!
+2. [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) 로 들어가 "Deploy" 버튼을 눌러주세요!!
+
+![[Snipaste_2024-10-21_12-17-49.PNG]]
+
+이 과정은 Vercel을 열어 Digital Obsidian Garden 레포의 복제본을 만드는 것입니다. Private로 해도 전혀 문제 없으며, Vercel에서 진행 되는 과정을 따라주세요!
+
 
 >[!Tips] Create Git Repository에서 Git Scope가 잡히지 않을 때
 > - \+ Add Git Account 를 눌러 추가해주세요!
