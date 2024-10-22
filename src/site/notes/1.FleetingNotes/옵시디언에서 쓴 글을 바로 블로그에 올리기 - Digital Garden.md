@@ -1,5 +1,5 @@
 ---
-{"date":"2024년 10월 21일 오후 12시 6분","dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","dgPassFrontmatter":true,"created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T10:25:05.836+09:00"}
+{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","updated":"10월 화, 2024 10:46 오전"}
 ---
 
 
