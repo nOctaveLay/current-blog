@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T11:14:23.329+09:00"}
+{"dg-publish":true,"permalink":"/1-fleeting-notes/digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T11:16:28.168+09:00"}
 ---
 
 
@@ -45,7 +45,9 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
  
 --- 
 4. 옵시디언을 열고, Digital Garden setting에 들어가세요. Github repo name, Github Username, Github token을 채워주시면 됩니다!
+
 ![[digital-garden-setting-2.PNG]]
+
 
 ---
 5. 블로그에 글을 게재하기 위해선 2개의 property를 추가해야 합니다.
