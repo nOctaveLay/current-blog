@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh/","noteIcon":"2","created":"2024-10-30T12:23:45.712+09:00","updated":"2024-11-02T22:10:44.784+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh/","noteIcon":"2","created":"2024-10-30T12:23:45.712+09:00","updated":"2024-11-04T14:14:33.739+09:00"}
 ---
 
 #vscode #VScode #ssh #원격서버 
