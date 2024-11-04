@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh/","noteIcon":"2","created":"2024-10-30T12:23:45.712+09:00","updated":"2024-11-04T14:17:16.101+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh/","noteIcon":"2","created":"2024-10-30T12:23:45.712+09:00","updated":"2024-11-04T14:18:41.924+09:00"}
 ---
 
 #vscode #VScode #ssh #원격서버 
@@ -36,20 +36,3 @@ Host my-server
 | IdentityFile | The file location where you've stored your private key.                                                                     |
 
 ## 4. Ctrl + shift + P 를 눌러 Host 연결 선택
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="nOctaveLay/current-blog"
-        data-repo-id="R_kgDONDT6iQ"
-        data-category="Comments"
-        data-category-id="DIC_kwDONDT6ic4Cj9Lb"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-</script>
