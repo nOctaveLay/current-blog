@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-05T10:40:15.766+09:00"}
+{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-05T10:43:06.877+09:00"}
 ---
 
-
+---
 ## 왜 사용하면 좋을까요?
 
 markdown format에 익숙하며, Obsidian을 자주 쓰는 사용자
@@ -24,7 +24,9 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 ---
 2. [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) 로 들어가 "Deploy" 버튼을 눌러주세요!!
 
+
 ![[Snipaste_2024-10-21_12-17-49.PNG]]
+
 
 이 과정은 Vercel을 열어 Digital Obsidian Garden 레포의 복제본을 만드는 것입니다. Private로 해도 전혀 문제 없으며, Vercel에서 진행 되는 과정을 따라주세요!
 
@@ -45,6 +47,7 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
  
 --- 
 4. 옵시디언을 열고, Digital Garden setting에 들어가세요. Github repo name, Github Username, Github token을 채워주시면 됩니다!
+
 
 ![[digital-garden-setting-2.PNG]]
 
