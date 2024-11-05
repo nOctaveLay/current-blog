@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","noteIcon":"2","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T14:44:08.994+09:00"}
+{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/revised","noteIcon":"2","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-10-22T14:44:08.994+09:00"}
 ---
 
 
