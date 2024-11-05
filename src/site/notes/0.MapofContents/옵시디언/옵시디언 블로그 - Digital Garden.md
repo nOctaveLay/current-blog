@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-05T10:43:06.877+09:00"}
+{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-05T10:51:09.396+09:00"}
 ---
 
 ---
@@ -7,6 +7,10 @@
 
 markdown format에 익숙하며, Obsidian을 자주 쓰는 사용자
 -> blog에 대해 따로 신경 쓰고 싶지 않을 때
+
+![[Snipaste_2024-10-21_12-17-49.PNG]]
+![[digital-garden-setting-2.PNG]]
+
 
 ---
 ## 어떻게 사용하나요?
@@ -23,7 +27,6 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
 1. 옵시디언에서  커뮤니티 플러그인을 사용해 [Digital Garden](obsidian://show-plugin?id=digitalgarden) 을 다운로드하고 설치합니다. **반드시 활성화를 눌러주세요!**
 ---
 2. [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) 로 들어가 "Deploy" 버튼을 눌러주세요!!
-
 
 ![[Snipaste_2024-10-21_12-17-49.PNG]]
 
@@ -47,7 +50,6 @@ Digital Garden은 Vercel을 기반으로 한 github blog를 사용하고 있습�
  
 --- 
 4. 옵시디언을 열고, Digital Garden setting에 들어가세요. Github repo name, Github Username, Github token을 채워주시면 됩니다!
-
 
 ![[digital-garden-setting-2.PNG]]
 
