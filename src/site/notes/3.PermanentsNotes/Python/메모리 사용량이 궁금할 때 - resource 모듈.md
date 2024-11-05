@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/python/resource/","noteIcon":"2","created":"2024-11-04T13:32:17.817+09:00","updated":"2024-11-04T13:47:19.691+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/python/resource/","created":"2024-11-04T13:32:17.817+09:00","updated":"2024-11-04T13:47:19.691+09:00"}
 ---
 
 ## 궁금해 한 이유
