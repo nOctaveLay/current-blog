@@ -7,5 +7,5 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
 
-한국어로 자세한 설명을 원하시면 [다음](src/site/notes/0.MapofContents/옵시디언/옵시디언 블로그 - Digital Garden.md)을 클릭해주세요.
+한국어로 자세한 설명을 원하시면 [다음](https://github.com/nOctaveLay/current-blog/blob/main/src/site/notes/0.MapofContents/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20-%20Digital%20Garden.md)을 클릭해주세요.
 감사합니다!
