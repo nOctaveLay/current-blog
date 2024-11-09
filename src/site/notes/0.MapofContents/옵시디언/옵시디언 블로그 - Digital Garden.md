@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-05T10:53:41.514+09:00"}
+{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-09T22:52:10.748+09:00"}
 ---
 
 ---
@@ -179,3 +179,5 @@ Light, Dark 두 가지 테마가 존재합니다.
 2. \[옵시디언 내의 주소\] :\[블로그에서 보일 폴더 주소\]
 3. 첫 번째 일치에서 매칭 종료
 
+이외 궁금하신 점이 있다면 댓글로 남겨주세요!
+제작에 큰 힘이 됩니다! >ㅁ<
