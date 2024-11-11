@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-09T22:52:10.748+09:00"}
+{"dg-publish":true,"permalink":"/0-mapof-contents//digital-garden/","created":"2024-10-21T12:06:34.122+09:00","updated":"2024-11-11T21:19:52.105+09:00"}
 ---
 
 ---
 ## 왜 사용하면 좋을까요?
 
-markdown format에 익숙하며, Obsidian을 자주 쓰는 사용자
+옵시디언을 자주 쓰는 사용자가 복사 + 붙여넣기로 글을 쓰기 귀찮을 때 사용하면 좋다.
 -> blog에 대해 따로 신경 쓰고 싶지 않을 때
 
 ---
