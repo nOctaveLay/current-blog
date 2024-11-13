@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh-pem/","created":"2024-10-30T12:59:22.544+09:00","updated":"2024-11-04T13:46:09.310+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/v-scode/v-scode-ssh-pem/","created":"2024-10-30T12:59:22.544+09:00","updated":"2024-11-13T16:25:34.760+09:00"}
 ---
 
 #vscode #VScode #ssh #pem #privatekey #수정중
