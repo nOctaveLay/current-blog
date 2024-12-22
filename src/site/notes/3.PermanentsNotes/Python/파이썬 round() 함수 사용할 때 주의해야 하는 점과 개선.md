@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/python/round/","created":"2024-12-22T00:22:24.875+09:00","updated":"2024-12-23T03:56:11.856+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/python/round/","created":"2024-12-22T00:22:24.875+09:00","updated":"2024-12-23T05:31:19.766+09:00"}
 ---
 
 
@@ -43,6 +43,11 @@
 >- **[odd–even rounding](https://en.wikipedia.org/wiki/Rounding#cite_note-7)** 
 >- **bankers' rounding**
 
+
+>[!Tips] Rounding의 종류
+>![Pasted image 20241223050204.png](/img/user/AttachedFiles/Pasted%20image%2020241223050204.png)
+>- 우리가 일상 생활에서 많이 쓰는 방법은 `Rounding half away from zero` 이라는 것을 알 수 있다.
+>- 파이썬과 자바에서 `half up` 이라는 표현은 `Rounding half away from zero`를 의미한다.
 
 ## Floating point
 
@@ -111,20 +116,25 @@ context = getcontext()
 context.rounding = ROUND_HALF_UP
 ```
 
-rounding 방법을 변경했다면, 숫자를 `Decimal` 객체로 변경합니다.
-그 후 round를 해주면 됩니다.
-**Decimal에 유리수를 반드시 String 형태로 넣어야 합니다.** 그렇지 않으면 위에서 언급한 floating point 문제가 그대로 일어납니다.
-
-```python
-round(Decimal("1.4999999"))
-```
-
-Decimal 객체는 float 자료형으로 변경할 수 있다.
+rounding 방법을 변경했다면, 숫자를 `Decimal` 객체로 변경합니다. 그 후 `round()`를 해주면 됩니다. 
+또한, Decimal 객체는 다른 자료형으로 변경할 수 있습니다.
 ```python
 float(Decimal('1.1')) #1.1
+int(Decimal('1.1')) #1
 ```
 
-**주의** : Decimal은 메모리가 많이 든다.
+**주의사항**
+**1. Decimal에 유리수를 반드시 String 형태로 넣어야 합니다.**
+그렇지 않으면 위에서 언급한 floating point 문제가 그대로 일어납니다.
+```python
+round(Decimal("1.4999999"),0)
+```
+
+**2. round()에 ndigit을 설정해야 합니다.**
+`round()`에 *ndigit*을 설정하지 않을 경우, 가장 가까운 정수를 돌려준다는 점입니다. 이 때 사용되는 방법도 역시 `even` 한 방법입니다. 따라서 Decimal에 설정된 원칙으로 반올림되게 만들고 싶다면 *ndigit*을 반드시 세팅해줘야 합니다.
+
+**아쉬운 점**
+**1. 메모리가 많이 듭니다.**
 밑의 두 코드를 실행시켜보면 float은 24byte이지만, Decimal 객체는 104byte임을 알 수 있다.  따라서 Decimal 객체를 사용할 때는 메모리에 유의해야 한다.
 
 ```python
@@ -134,17 +144,60 @@ sys.getsizeof(1.1) #24
 sys.getsizeof(Decimal('1.1')) #104
 ```
 
+**2. 시간이 많이 듭니다.**
+
+`timeit` 모듈을 사용하여 두 모듈을 비교해보겠습니다.
+
+```python
+import timeit
+from decimal import Decimal
+
+# 일반 부동소수점 연산
+float_time = timeit.timeit(
+    stmt="x * y + z",
+    setup="x = 1.1; y = 2.2; z = 3.3",
+    number=1000000
+)
+
+# Decimal 연산
+decimal_time = timeit.timeit(
+    stmt="x * y + z",
+    setup="from decimal import Decimal; x = Decimal('1.1'); y = Decimal('2.2'); z = Decimal('3.3')",
+    number=1000000
+)
+
+print(f"일반 부동소수점 연산 시간: {float_time:.6f}초")
+print(f"Decimal 연산 시간: {decimal_time:.6f}초")
+
+```
+
+결과는 다음과 같습니다.
+
+```cmd
+일반 부동소수점 연산 시간: 0.037404초
+Decimal 연산 시간: 0.128956초
+```
+
+약 3배 정도 차이를 보입니다. 
+`dis.dis()`로 두 셋업을 비교한 결과는 다음과 같습니다.
+
+![Pasted image 20241223052905.png](/img/user/AttachedFiles/Pasted%20image%2020241223052905.png)
+
+![Pasted image 20241223052947.png](/img/user/AttachedFiles/Pasted%20image%2020241223052947.png)
+
+Decimal을 불러오는 부분이 상당히 많습니다. 모듈에서 class를 불러오는 과정에서 시간이 많이 소요되는 것으로 추측하고 있습니다.
+
 ## 결론
 
 결론은 다음과 같습니다.
 - Python의 `round()`은 **Rounding half to even** 전략을 따르고 있다.
-- 메모리가 충분할 때 우리가 생각하는 반올림을 구현하기 위해선 Decimal을 써라! 
+- 시간과 메모리가 충분할 때 우리가 생각하는 반올림을 구현하기 위해선 Decimal을 써라! 
 
 ## 참고
 
-- [Rounding - Wikipedia](https://en.wikipedia.org/wiki/Rounding#Rounding_half_away_from_zero)에서 Rounding to the nearest integer 부분의 Rounding half up 부분을 보면 *"자바나 파이썬 같은 프로그래밍 언어들은 "half up" 방법을 사용한다고 한다."* 고 되어있습니다. 하지만 실제 참고 내역을 들어가 보니, *decimal의 Rounding modes*로 이어지며, 이는 decimal에서 rounding을 할 때 바꿀 수 있는 mode를 의미합니다. 아무것도 손대지 않은 상태에서 `getcontext()`로 확인하면, `rounding=ROUND_HALF_EVEN` 으로 되어 있는 것을 확인할 수 있다. 이는 *decimal도 ROUND_HALF_EVEN 방식이 기본임을 의미합니다.*
+위의 글을 바탕으로 [18110번: solved.ac](https://www.acmicpc.net/problem/18110)의 정확한 구현은 Decimal이 맞을 것입니다. 그런데 이 문제에 한해선 그냥 단순히 정수 부분 + 소수점 부분으로 나눠도 됩니다. 왜냐면 이 문제에서 요구하는 반올림은 정수 부분까지 반올림을 하는 것이기 때문입니다. 정수 부분까지 반올림을 하기 위해선 소수점 첫째 자리가 중요해집니다. 반대로 말해서, 소숫점 둘째 자리부터 정확할 필요는 없습니다. 만약 소숫점 둘째 자리였다면 $5 \times 10^{-2}$ 이기 때문에 명확히 2진법으로 변환되지 않았겠지만, 소숫점 첫째 자리는 $2 ^{-1}$ 로 정확히 변환됩니다. 그래서 굳이 Decimal로 구현할 필요는 없습니다.
 
-참고 내역
+참고 내용
 - [What’s New In Python 3.1 — Python 3.13.1 documentation](https://docs.python.org/3/whatsnew/3.1.html)
 - [파이썬 round() 반올림 사용 시 주의점 : 네이버 블로그](https://m.blog.naver.com/PostView.nhn?blogId=herbdoc95&logNo=221574077380&proxyReferer=http:%2F%2Fblog.naver.com%2FPostView.nhn%3FblogId%3Dherbdoc95%26logNo%3D221574077380) 
 - [Built-in Functions — Python 3.13.1 documentation](https://docs.python.org/3.13/library/functions.html#round)
