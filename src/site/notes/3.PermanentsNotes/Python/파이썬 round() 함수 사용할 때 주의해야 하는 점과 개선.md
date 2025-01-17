@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/3-permanents-notes/python/round/","created":"2024-12-22T00:22:24.875+09:00","updated":"2024-12-23T05:31:19.766+09:00"}
+{"dg-publish":true,"permalink":"/3-permanents-notes/python/round/","created":"2024-12-22T00:22:24.875+09:00","updated":"2024-12-24T16:39:30.871+09:00"}
 ---
 
+#경험담 
 
 이 문제를 구현하다 있었던 일입니다.
 
